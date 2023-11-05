@@ -11,6 +11,7 @@ html, body{
     padding: 0;
     font-family: var(--normal);
     background:  var(--bg, white);
+    overflow: hidden;
 }
 
 #progressBar{
@@ -62,7 +63,10 @@ button{
   border-radius: 1000vw;
   cursor: pointer;
   transition: transform 250ms ease-in-out;
+}
 
+button a{
+  all: unset;
 }
 
 button:hover{
