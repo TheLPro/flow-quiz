@@ -1,3 +1,4 @@
+var current;
 var data = `{
     "s1": {
       "q1": "null",
