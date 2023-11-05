@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faza - | Flow Quiz</title>
     <link rel="stylesheet" href="style.css" />
-    <progress id="progressBar" value="100" max="100"></progress>
+    <progress id="progressBar" value="1" max="13"></progress>
     <style>
       h1 {
         width: 100%;
@@ -15,16 +15,34 @@
     </style>
   </head>
   <body>
-    <h1 id="title">1 Faza Wypalenia Zawodowego</h1>
+    <h1 id="title"></h1>
     <form>
       <div class="question">
-        <span class="question_title">Question 1</span>
-        <div class="radio_group">
-          <input type="radio" name="answer" id="answer_1_1" />
-          <input type="radio" name="answer" id="answer_1_0" />
+            <span class="question_title"><b>Question 1</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mauris eget nulla euismod cursus.</span>
+            <div class="radio_group">
+                <input type="radio" name="answer1" id="answer_1_1" checked />
+                <input type="radio" name="answer1" id="answer_1_0" />
+            </div>
         </div>
-      </div>
+        <div class="question">
+            <span class="question_title"><b>Question 2</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mauris eget nulla euismod cursus.</span>
+            <div class="radio_group">
+                <input type="radio" name="answer2" id="answer_1_1" checked />
+                <input type="radio" name="answer2" id="answer_1_0" />
+            </div>
+        </div>
+        <div class="question">
+            <span class="question_title"><b>Question 3</b> - Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mauris eget nulla euismod cursus.</span>
+            <div class="radio_group">
+                <input type="radio" name="answer3" id="answer_1_1" checked />
+                <input type="radio" name="answer3" id="answer_1_0" />
+            </div>
+        </div>
     </form>
+    <div class="buttons">
+        <button id="return" class="btn return">Return</button>
+        <button id="next" class="btn next">Next</button>
+    </div>
   </body>
   <script src="index.js"></script>
   <script src="title.js"></script>

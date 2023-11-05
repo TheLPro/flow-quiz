@@ -1,5 +1,14 @@
 @import './vars.css';
 
+@keyframes load {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
@@ -25,6 +34,7 @@ html, body{
 #progressBar::-webkit-progress-value{
     background-color: var(--accent, blue);
     border-radius: 0 1000vw 1000vw 0;
+    transition: width 0.5s linear
 }
 
 main{
@@ -37,6 +47,7 @@ main{
 
 main div{
   margin-inline: 5rem;
+  max-width: 50pc;
 }
 
 h1 {
@@ -89,6 +100,7 @@ img {
   font-size: 1.5rem;
   font-weight: bold;
   align-items: center;
+  justify-content: space-between;
 }
 
 .radio_group{
@@ -118,4 +130,24 @@ img {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
+}
+.buttons {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: flex;
+  gap: 3rem;
+}
+.next {border-top-right-radius: 0; border-bottom-right-radius: 0;}
+.return {border-top-left-radius: 0; border-bottom-left-radius: 0;}
+
+form{
+  display: flex;
+  gap: 1rem;
+  flex-direction: column;
+  margin-inline: 2rem;
+}
+b {
+  font-family: var(--bold);
 }
