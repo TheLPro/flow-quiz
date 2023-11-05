@@ -82,3 +82,10 @@ img {
   object-fit: cover;
   object-position: center;
 }
+
+.question{
+  display: flex;
+  gap: 1rem;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
