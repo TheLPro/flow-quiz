@@ -99,6 +99,8 @@ img {
 
 .radio_group input{
   all: unset;
-  width: 2rem;
+  width: 1.5rem;
   aspect-ratio: 1;
+  background: var(--primary, gray);
+  border-radius: 50%;
 }
