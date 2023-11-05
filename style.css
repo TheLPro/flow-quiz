@@ -103,4 +103,19 @@ img {
   aspect-ratio: 1;
   background: var(--primary, gray);
   border-radius: 50%;
+  cursor: pointer;
+  position: relative;
+}
+
+.radio_group input:checked::after{
+  content: '';
+  display: block;
+  position: absolute;
+  width: 50%;
+  aspect-ratio: 1;
+  background: var(--primary-300, blue);
+  border-radius: 50%;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
