@@ -1,4 +1,3 @@
-var current;
 var data = `{
     "s1": {
       "q1": "null",
@@ -66,8 +65,8 @@ var obj = JSON.parse(data);
 var scores = obj;
 
 function addData(score, s, q) {
-    obj[s][q] = score;
+  obj[s][q] = score;
 }
-if (scores.s12.q3 != "null") {
-    console.log("test complete");
+if (scores.s12.q3 != 'null') {
+  console.log('test complete');
 }
