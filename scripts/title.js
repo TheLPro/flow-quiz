@@ -7,7 +7,7 @@ var progress = document.getElementById("progressBar");
 function changeTitle(num) {
     document.title = `Faza ${num} | Test Wypalenia`;
     title.innerHTML = `Faza ${num}`;
-    progress.value = num + 1;
+    progress.value = num;
 }
 changeTitle(current);
 function next() {
