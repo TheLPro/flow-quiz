@@ -1,3 +1,12 @@
+@font-face {
+    font-family: 'Garet Book';
+    src: url('/assets/Garet-Book.otf') format('opentype');
+  }
+  @font-face {
+    font-family: 'Garet Heavy';
+    src: url('/assets/Garet-Heavy.otf') format('opentype');
+  }
+
 :root {
     --bg: #F0F4F5;
     --primary-100: #D1DDE0;
@@ -5,4 +14,6 @@
     --primary: #7497A1;
     --accent: #21A3C8;
     --primary-800: #537179;
+    --normal: 'Garet Book', sans-serif;
+    --bold: 'Garet Heavy', sans-serif;	
 }

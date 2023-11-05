@@ -70,4 +70,3 @@ function addData(score, s, q) {
 if (scores.s12.q3 != "null") {
     console.log("test complete");
 }
-
