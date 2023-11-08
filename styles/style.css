@@ -63,8 +63,7 @@ p {
   color: var(primary-800, gray);
   line-height: 160%;
 }
-
-button{
+button {
   all: unset;
   width: 100%;
   padding-block: 1rem;
@@ -76,8 +75,8 @@ button{
   border-radius: 1000vw;
   cursor: pointer;
   transition: transform 250ms ease-in-out;
+  
 }
-
 button a{
   all: unset;
 }
