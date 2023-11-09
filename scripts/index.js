@@ -88,6 +88,7 @@ var q1 = document.getElementById("q1");
 var q2 = document.getElementById("q2");
 var q3 = document.getElementById("q3");
 
+
 function changeTitle(num) {
   if (window.location.href.includes("quiz.html")) {
     document.title = `Faza ${num} | Test Wypalenia`;
@@ -101,6 +102,7 @@ function next() {
         current++;
         changeTitle(current);
         setQuestion(current);
+        resetChekcks();
     } else {
         window.location.href = "done.html";
     }
@@ -110,6 +112,7 @@ function back() {
         current--;
         changeTitle(current);
         setQuestion(current);
+        resetChekcks();
     } else {
         window.location.href = "index.html";
     }
@@ -171,3 +174,15 @@ document.querySelector("#answer_3_1").addEventListener("click", function() {
 document.querySelector("#answer_3_0").addEventListener("click", function() {
   addData(0, `s${current}`, "q3");
 });
+
+
+function resetChekcks(){
+  const buttons = document.querySelectorAll("input[type='radio']");
+  buttons.forEach((button) => {
+    if(button.value == 'true'){
+      button.checked = true;
+    } else {
+      button.checked = false;
+    }
+  });
+}
