@@ -1,63 +1,63 @@
 var data = `{
     "s1": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s2": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s3": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s4": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s5": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s6": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s7": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s8": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s9": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s10": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s11": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     },
     "s12": {
-      "q1": 0,
-      "q2": 0,
-      "q3": 0
+      "q1": 1,
+      "q2": 1,
+      "q3": 1
     }
   }`;
 const tsvData = `
@@ -122,12 +122,14 @@ if (nextBtn && prevBtn) {
 
 function addData(score, s, q) {
   obj[s][q] = score;
+  localStorage.setItem('data', JSON.stringify(obj));
+  console.log("Added data: " + score + " to " + s + " " + q);
 }
 for (let i = 1; i < 13; i++) {
   var sel = `s${i}`;
   var score = obj[sel]['q1'] + obj[sel]['q2'] + obj[sel]['q3'];
-  if (score && sel) {
-    document.querySelector(`#${sel}`).innerHTML = `${score}/3`;
+  if (document.querySelector(`#${sel}`)) {
+    document.querySelector(`#${sel}`).textContent = score + "/3";
   }
 }
 function tsvParse() {
@@ -138,13 +140,34 @@ function tsvParse() {
     const values = rows[i].split('\t'); // Assuming tabs separate the values
     listOfLists.push(values);
   }
-
   return listOfLists;
 }
 function setQuestion(section) {
   section = section - 1;
+  if (q1 && q2 && q3) {
   q1.innerHTML = tsvParse()[section][0];
   q2.innerHTML = tsvParse()[section][1];
   q3.innerHTML = tsvParse()[section][2];
+  }
 }
+
 setQuestion(current);
+
+document.querySelector("#answer_1_1").addEventListener("click", function() {
+  addData(1, `s${current}`, "q1");
+});
+document.querySelector("#answer_1_0").addEventListener("click", function() {
+  addData(0, `s${current}`, "q1");
+});
+document.querySelector("#answer_2_1").addEventListener("click", function() {
+  addData(1, `s${current}`, "q2");
+});
+document.querySelector("#answer_2_0").addEventListener("click", function() {
+  addData(0, `s${current}`, "q2");
+});
+document.querySelector("#answer_3_1").addEventListener("click", function() {
+  addData(1, `s${current}`, "q3");
+});
+document.querySelector("#answer_3_0").addEventListener("click", function() {
+  addData(0, `s${current}`, "q3");
+});
