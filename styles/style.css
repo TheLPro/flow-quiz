@@ -119,7 +119,12 @@ img {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
-  background: var(--primary);
+}
+.radio_group input[value~="true"] {
+  background: green
+}
+.radio_group input[value~="false"] {
+  background: red;
 }
 .radio_group input:checked::after{
   content: '';
@@ -157,16 +162,21 @@ b {
 
 /* finished */
 
+
 .container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
   float: left;
   flex-wrap: wrap;
+  width: 100%;
+  margin: auto;
+  margin-top: 100px;
 }
 .window {
   background-color: var(--primary-300);
-  width: 300px;
+  width: 22.5%;
+  min-width: 170px;
   height: 200px;
   padding: 10px;
   padding-left: 20px;
@@ -175,6 +185,18 @@ b {
   text-align: left;
   border-radius: 20px;
   margin: 10px;
+}
+@media screen and (max-width: 593px) {
+  .window {
+    width: 45%;
+  }
+  
+}
+@media screen and (max-width: 453px) {
+  .window {
+    width: 90%;
+  }
+  
 }
 .title {
   font-size: 30px;
@@ -186,4 +208,18 @@ b {
   font-size: 40px;
   font-weight: bold;
   margin-bottom: 20px;
+}
+div.top {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+.score-title {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  width: 100%;
 }

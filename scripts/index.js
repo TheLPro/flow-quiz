@@ -1,3 +1,4 @@
+if (window.location.href.includes("index.html")) {
 var data = `{
     "s1": {
       "q1": 1,
@@ -60,6 +61,9 @@ var data = `{
       "q3": 1
     }
   }`;
+} else {
+  var data = localStorage.getItem('data');
+}
 const tsvData = `
 Hello there sir, how could I help you today?\tHello there sir, how could I help you today??\tHello there sir, how could I help you today???
 Hello there sir, how could I help you today????\tHello there sir, how could I help you today?????\tHello there sir, how could I help you today??????
