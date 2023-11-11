@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Faza - | Flow Quiz</title>
     <link rel="stylesheet" href="styles/style.css" />
-    
+
     <progress id="progressBar" value="0" max="12"></progress>
     <style>
       h1 {
@@ -19,30 +19,68 @@
     <h1 id="title"></h1><span class="reset" id="reset"></span>
     <form>
       <div class="question">
-            <span class="question_title"><b>Pytanie 1</b> - <span id="q1">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mauris eget nulla euismod cursus.</span></span>
-            <div class="radio_group">
-              <input type="radio" name="answer1" id="answer_1_1" value ="true" checked />
-              <input type="radio" name="answer1" id="answer_1_0" value ="false" />
-            </div>
+        <span class="question_title"
+          ><b>Pytanie 1</b> -
+          <span id="q1"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+            mauris eget nulla euismod cursus.</span
+          ></span
+        >
+        <div class="radio_group">
+          <input
+            type="radio"
+            name="answer1"
+            id="answer_1_1"
+            value="true"
+            checked
+          />
+          <input type="radio" name="answer1" id="answer_1_0" value="false" />
+          <hr />
         </div>
-        <div class="question">
-            <span class="question_title"><b>Pytanie 2</b> - <span id="q2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mauris eget nulla euismod cursus.</span></span>
-            <div class="radio_group">
-                <input type="radio" name="answer2" id="answer_2_1" value ="true" checked />
-                <input type="radio" name="answer2" id="answer_2_0" value ="false" />
-            </div>
+      </div>
+      <div class="question">
+        <span class="question_title"
+          ><b>Pytanie 2</b> -
+          <span id="q2"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+            mauris eget nulla euismod cursus.</span
+          ></span
+        >
+        <div class="radio_group">
+          <input
+            type="radio"
+            name="answer2"
+            id="answer_2_1"
+            value="true"
+            checked
+          />
+          <input type="radio" name="answer2" id="answer_2_0" value="false" />
+          <hr />
         </div>
-        <div class="question">
-            <span class="question_title"><b>Pytanie 3</b> - <span id="q3">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel mauris eget nulla euismod cursus.</span></span>
-            <div class="radio_group">
-                <input type="radio" name="answer3" id="answer_3_1" value ="true" checked />
-                <input type="radio" name="answer3" id="answer_3_0" value ="false" />
-            </div>
+      </div>
+      <div class="question">
+        <span class="question_title"
+          ><b>Pytanie 3</b> -
+          <span id="q3"
+            >Lorem ipsum dolor sit amet, consectetur adipiscing elit. Morbi vel
+            mauris eget nulla euismod cursus.</span
+          ></span
+        >
+        <div class="radio_group">
+          <input
+            type="radio"
+            name="answer3"
+            id="answer_3_1"
+            value="true"
+            checked
+          />
+          <input type="radio" name="answer3" id="answer_3_0" value="false" />
         </div>
+      </div>
     </form>
     <div class="buttons">
-        <button id="return" class="btn return">Powrót</button>
-        <button id="next" class="btn next">Dalej</button>
+      <button id="return" class="btn return">Powrót</button>
+      <button id="next" class="btn next">Dalej</button>
     </div>
   </body>
   <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
