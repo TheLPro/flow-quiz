@@ -238,3 +238,10 @@ b {
   margin-inline: 2%;
   margin-bottom: 2%;
 }
+
+.special:hover {
+  transform: none;
+}
+.special:active {
+  transform: none;
+}
