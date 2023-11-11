@@ -1,19 +1,21 @@
 @font-face {
-    font-family: 'Garet Book';
-    src: url('/assets/Garet-Book.otf') format('opentype');
-  }
-  @font-face {
-    font-family: 'Garet Heavy';
-    src: url('/assets/Garet-Heavy.otf') format('opentype');
-  }
+  font-family: 'Garet Book';
+  src: url('/assets/Garet-Book.otf') format('opentype');
+}
+@font-face {
+  font-family: 'Garet Heavy';
+  src: url('/assets/Garet-Heavy.otf') format('opentype');
+}
 
 :root {
-    --bg: #F0F4F5;
-    --primary-100: #D1DDE0;
-    --primary-300: #C2D1D6;
-    --primary: #7497A1;
-    --accent: #21A3C8;
-    --primary-800: #537179;
-    --normal: 'Garet Book', sans-serif;
-    --bold: 'Garet Heavy', sans-serif;	
+  --bg: #f0f4f5;
+  --primary-100: #d1dde0;
+  --primary-300: #c2d1d6;
+  --primary: #7497a1;
+  --accent: #21a3c8;
+  --primary-800: #537179;
+  --normal: 'Garet Book', sans-serif;
+  --bold: 'Garet Heavy', sans-serif;
+  --red-400: rgb(245, 55, 55);
+  --green-400: rgb(124, 226, 124);
 }

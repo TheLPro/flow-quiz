@@ -63,7 +63,7 @@ h1 {
 }
 
 p {
-  color: var(primary-800, gray);
+  color: var(--primary-800, gray);
   line-height: 160%;
 }
 button {
@@ -86,7 +86,7 @@ button a {
 button:hover {
   transform: scale(1.05);
 }
-.start:active {
+.start:hover {
   transform: scale(0.95);
 }
 .btn:active {
@@ -121,13 +121,16 @@ img {
   border-radius: 50%;
   cursor: pointer;
   position: relative;
+  outline: 2px solid var(--primary-800);
+  outline-offset: -1px;
+  backdrop-filter: brightness(0.9);
 }
-.radio_group input[value~="true"] {
-  background: green
+/* .radio_group input[value~='true'] {
+  background: green;
 }
-.radio_group input[value~="false"] {
+.radio_group input[value~='false'] {
   background: red;
-}
+} */
 .radio_group input:checked::after {
   content: '';
   display: block;
@@ -181,18 +184,17 @@ b {
 
 /* finished */
 
-
 .container {
   display: flex;
   flex-direction: row;
   gap: 1rem;
-  float: left;
   flex-wrap: wrap;
   width: 100%;
   margin: auto;
+  justify-content: center;
 }
 .window {
-  background-color: var(--primary-300);
+  background-color: var(--primary);
   width: 22.5%;
   min-width: 170px;
   height: 200px;
@@ -209,13 +211,11 @@ b {
   .window {
     width: 45%;
   }
-  
 }
 @media screen and (max-width: 453px) {
   .window {
     width: 90%;
   }
-  
 }
 .title {
   font-size: 30px;
