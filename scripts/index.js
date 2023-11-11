@@ -159,25 +159,26 @@ function setQuestion(section) {
 }
 
 setQuestion(current);
-
-document.querySelector("#answer_1_1").addEventListener("click", function() {
-  addData(1, `s${current}`, "q1");
-});
-document.querySelector("#answer_1_0").addEventListener("click", function() {
-  addData(0, `s${current}`, "q1");
-});
-document.querySelector("#answer_2_1").addEventListener("click", function() {
-  addData(1, `s${current}`, "q2");
-});
-document.querySelector("#answer_2_0").addEventListener("click", function() {
-  addData(0, `s${current}`, "q2");
-});
-document.querySelector("#answer_3_1").addEventListener("click", function() {
-  addData(1, `s${current}`, "q3");
-});
-document.querySelector("#answer_3_0").addEventListener("click", function() {
-  addData(0, `s${current}`, "q3");
-});
+if (window.location.href.includes("quiz")) {
+  document.querySelector("#answer_1_1").addEventListener("click", function() {
+    addData(1, `s${current}`, "q1");
+  });
+  document.querySelector("#answer_1_0").addEventListener("click", function() {
+    addData(0, `s${current}`, "q1");
+  });
+  document.querySelector("#answer_2_1").addEventListener("click", function() {
+    addData(1, `s${current}`, "q2");
+  });
+  document.querySelector("#answer_2_0").addEventListener("click", function() {
+    addData(0, `s${current}`, "q2");
+  });
+  document.querySelector("#answer_3_1").addEventListener("click", function() {
+    addData(1, `s${current}`, "q3");
+  });
+  document.querySelector("#answer_3_0").addEventListener("click", function() {
+    addData(0, `s${current}`, "q3");
+  });
+}
 
 
 function resetChekcks(){
@@ -190,3 +191,8 @@ function resetChekcks(){
     }
   });
 }
+
+document.addEventListener("load", function() {
+  resetChekcks();
+  console.log("Loaded");
+});
