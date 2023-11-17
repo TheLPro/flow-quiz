@@ -108,7 +108,7 @@ img {
 }
 
 form {
-  max-width: min(75rem, 90%);
+  width: 60%;
   min-height: 20rem;
   max-height: 40rem;
   display: flex;
@@ -130,11 +130,12 @@ form {
 }
 
 .question hr {
+  display: none;
   width: 5px;
   height: 100%;
   border: none;
   outline: none;
-  background: var(--bg, white);
+  background: var(--primary-800, white);
   opacity: 0.8;
 }
 
