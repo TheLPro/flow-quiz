@@ -148,7 +148,7 @@ for (let i = 1; i < 13; i++) {
   var sel = `s${i}`;
   var score = obj[sel]['q1'] + obj[sel]['q2'] + obj[sel]['q3'];
   if (document.querySelector(`#${sel}`)) {
-    document.querySelector(`#${sel}`).textContent = score + '/3';
+    document.querySelector(`#${sel}`).textContent = score + '%';
   }
 }
 function tsvParse() {

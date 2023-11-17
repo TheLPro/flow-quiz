@@ -1,68 +1,75 @@
 <!DOCTYPE html>
 <html lang="en" class="scroll">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Koniec!</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body class="scroll">
+    <link rel="stylesheet" href="styles/style.css" />
+    <link rel="icon" type="image/png" href="./assets/favicon.png" />
+  </head>
+  <body class="scroll">
+    <canvas
+      style="position: fixed; width: 100vw; height: 100vh; opacity: 1; transition: opacity 1s ease; pointer-events: none;"
+      id="confetti-canvas"
+    ></canvas>
     <div class="top">
-    <h1 class="score-title">Wyniki</h1>
+      <h1 class="score-title">Wyniki</h1>
     </div>
     <div class="container">
-        <div class="window">
-            <span class="title">Faza 1</span>
-            <span class="score" id="s1"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 2</span>
-            <span class="score" id="s2"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 3</span>
-            <span class="score" id="s3"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 4</span>
-            <span class="score" id="s4"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 5</span>
-            <span class="score" id="s5"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 6</span>
-            <span class="score" id="s6"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 7</span>
-            <span class="score" id="s7"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 8</span>
-            <span class="score" id="s8"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 9</span>
-            <span class="score" id="s9"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 10</span>
-            <span class="score" id="s10"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 11</span>
-            <span class="score" id="s11"></span>
-        </div>
-        <div class="window">
-            <span class="title">Faza 12</span>
-            <span class="score" id="s12"></span>
-        </div>
+      <div class="window">
+        <span class="title">Faza 1</span>
+        <span class="score" id="s1"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 2</span>
+        <span class="score" id="s2"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 3</span>
+        <span class="score" id="s3"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 4</span>
+        <span class="score" id="s4"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 5</span>
+        <span class="score" id="s5"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 6</span>
+        <span class="score" id="s6"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 7</span>
+        <span class="score" id="s7"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 8</span>
+        <span class="score" id="s8"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 9</span>
+        <span class="score" id="s9"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 10</span>
+        <span class="score" id="s10"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 11</span>
+        <span class="score" id="s11"></span>
+      </div>
+      <div class="window">
+        <span class="title">Faza 12</span>
+        <span class="score" id="s12"></span>
+      </div>
     </div>
     <button class="special">Powrót</button>
-</body>
-<!--<script src="scripts/confetti.js"></script>-->
-<script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
-<script type="module" src="scripts/index.js"></script>
+  </body>
+  <!--<script src="scripts/confetti.js"></script>-->
+  <script src="https://requirejs.org/docs/release/2.3.5/minified/require.js"></script>
+  <script type="module" src="scripts/index.js"></script>
+  <script src="./scripts/confetti.js"></script>
+  </script>
 </html>
