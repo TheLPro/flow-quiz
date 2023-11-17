@@ -167,10 +167,9 @@ function addData(score, s, q) {
 for (let i = 1; i < 13; i++) {
   var sel = `s${i}`;
   var score = parseInt(obj[sel]['q1']) + parseInt(obj[sel]['q2']) + parseInt(obj[sel]['q3']) + parseInt(obj[sel]['q4']);
-  var calc = score / 20 * 100;
   if (document.querySelector(`#${sel}`)) {
-    document.querySelector(`#${sel}`).textContent = calc + '%';
-  }
+    document.querySelector(`#${sel}`).textContent = `${score}/20`
+  };
 }
 function resetChekcks() {
   const buttons = document.querySelectorAll("input[type='radio']");
@@ -252,7 +251,7 @@ if (window.location.href.includes('quiz')) {
   document.querySelector('#answer_3_4').addEventListener('click', function () {
     addData(4, `s${current}`, 'q3');
   });
-  document.querySelector('#answer_3_4').addEventListener('click', function () {
+  document.querySelector('#answer_3_5').addEventListener('click', function () {
     addData(5, `s${current}`, 'q3');
   });
   document.querySelector('#answer_4_1').addEventListener('click', function () {
