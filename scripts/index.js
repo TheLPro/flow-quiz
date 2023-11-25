@@ -117,6 +117,7 @@ var q1 = document.getElementById('q1');
 var q2 = document.getElementById('q2');
 var q3 = document.getElementById('q3');
 var q4 = document.getElementById('q4');
+var lhCheck = window.location.href.includes('5502');
 
 function changeTitle(num) {
   if (window.location.href.includes('quiz')) {
@@ -125,16 +126,14 @@ function changeTitle(num) {
     progress.value = num;
   }
 }
-
 function next() {
   if (current < 12) {
     current++;
     changeTitle(current);
     setQuestion(current);
     resetChekcks();
-    window.location.href = `${window.location.href.split('#')[0]}#${current}`;
   } else {
-    if (window.location.href.includes('5502')) {
+    if (lhCheck) {
       window.location.href = 'done.html';
     } else {
       window.location.href = 'done';
@@ -148,9 +147,8 @@ function back() {
     changeTitle(current);
     setQuestion(current);
     resetChekcks();
-    window.location.href = `${window.location.href.split('#')[0]}#${current}`;
   } else {
-    if (window.location.href.includes('5502')) {
+    if (lhCheck) {
       window.location.href = 'index.html';
     } else {
       window.location.href = 'index';
@@ -166,9 +164,25 @@ function addData(score, s, q) {
 
 for (let i = 1; i < 13; i++) {
   var sel = `s${i}`;
-  var score = parseInt(obj[sel]['q1']) + parseInt(obj[sel]['q2']) + parseInt(obj[sel]['q3']) + parseInt(obj[sel]['q4']);
+  var sq1 = parseInt(obj[sel]['q1']);
+  var sq2 = parseInt(obj[sel]['q2']);
+  var sq3 = parseInt(obj[sel]['q3']);
+  var sq4 = parseInt(obj[sel]['q4']);
+  var score = 0;
   if (document.querySelector(`#${sel}`)) {
-    document.querySelector(`#${sel}`).textContent = `${score}/20`
+    if (sq1 >= 4) {
+      score++;
+    } 
+    if (sq2 >= 4) {
+      score++;
+    } 
+    if (sq3 >= 4) {
+      score++;
+    } 
+    if (sq4 >= 4) {
+      score++;
+    }
+    document.querySelector(`#${sel}`).textContent = `${score}/4`
   };
 }
 function resetChekcks() {
@@ -270,23 +284,18 @@ if (window.location.href.includes('quiz')) {
     addData(5, `s${current}`, 'q4');
   });
 }
-window.onload = (event) => {
-  if (window.location.href.includes('#')) {
-    var last = window.location.href.split('#')[1];
-    if (current == 1) {
-      last = 1;
-    }
-    console.log(last);
-    changeTitle(last);
-    setQuestion(last);
-    current = last;
-  }
-  resetChekcks();
-  console.log('Loaded');
-};
 if (document.title.includes("Koniec")) {
   document.querySelector('.special').addEventListener('click', function () {
-    if (window.location.href.includes('5502')) {
+    if (lhCheck) {
+      window.location.href = 'quiz.html';
+    } else {
+      window.location.href = 'quiz';
+    }
+  });
+}
+if (document.title.includes("12 Faz Wypalenia Zawodowego")) {
+  document.querySelector('#start').addEventListener('click', function () {
+    if (lhCheck) {
       window.location.href = 'quiz.html';
     } else {
       window.location.href = 'quiz';
