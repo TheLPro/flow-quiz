@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Koniec!</title>
+    <title>Wyniki | Test Wypalenia</title>
     <link rel="stylesheet" href="styles/style.css" />
     <link rel="icon" type="image/png" href="./assets/favicon.png" />
   </head>
@@ -65,7 +65,7 @@
         <span class="score" id="s12"></span>
       </div>
     </div>
-    <button class="special btn">Powrót</button>
+    <a onclick="if (window.location.href.includes('5502')) {window.location.href = '/quiz.html'} else {window.location.href = '/quiz'}"><button class="special btn">Powrót</button></a>
   </body>
   <script type="module" src="scripts/index.js"></script>
   </script>

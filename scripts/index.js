@@ -252,7 +252,7 @@ if (window.location.href.includes('quiz')) {
   });
 }
 if (document.title.includes("Koniec")) {
-  document.querySelector('.special').addEventListener('click', function () {
+  document.querySelector('#return').addEventListener('click', function () {
     if (lhCheck) {
       window.location.href = 'quiz.html';
     } else {
@@ -269,3 +269,4 @@ if (document.title.includes("12 Faz Wypalenia Zawodowego")) {
     }
   });
 }
+console.log('Script loaded');

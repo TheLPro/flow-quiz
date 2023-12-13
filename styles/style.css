@@ -37,7 +37,7 @@ body {
   background-color: var(--primary-800, black);
 }
 #progressBar::-webkit-progress-value {
-  background-color: var(--accent, blue);
+  background-color: var(--primary, blue);
   border-radius: 0 1000vw 1000vw 0;
   transition: width 0.5s linear;
 }
@@ -313,6 +313,10 @@ b {
   transition-property: color;
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
+
+  border-radius: 5px;
+  background-color: var(--bg);
+  border: 2px solid var(--primary-800, black);
 }
 
 .swipe2right::before {
@@ -323,7 +327,7 @@ b {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: inherit;
+  border-radius: 3px;
 
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
@@ -333,19 +337,23 @@ b {
   transition-property: transform;
   -webkit-transition-duration: 0.2s;
   transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-out;
-  transition-timing-function: ease-out;
+  -webkit-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
 }
 
 .swipe2right:hover::before {
   -webkit-transform: scaleX(1);
   transform: scaleX(1);
-  background-color: var(--primary-800, salmon);
+  background-color: var(--primary-800, black); 
 }
 .swipe2right::after {
   -webkit-transform: scaleX(0);
   transform: scaleX(0);
 }
 .swipe2right:hover {
-  color: aliceblue;
+  color: var(--bg, white);
+}
+.swipe2right:active {
+  transition: transform 0.2s ease-in-out;
+  transform: scale(0.95);
 }
