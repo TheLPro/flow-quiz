@@ -68,18 +68,18 @@ localStorage.setItem('data', data);
   var data = localStorage.getItem('data');
 }
 var questions = `
-  Czy czuję się zmęczony?\tCzy czuję się wyczerpany??\tCzy czuję się wypalony???
-  Czy czuję się zmęczony??\tCzy czuję się wyczerpany???\tCzy czuję się wypalony????
-  Czy czuję się zmęczony???\tCzy czuję się wyczerpany????\tCzy czuję się wypalony?????
-  Czy czuję się zmęczony????\tCzy czuję się wyczerpany?????\tCzy czuję się wypalony??????
-  Czy czuję się zmęczony?????\tCzy czuję się wyczerpany??????\tCzy czuję się wypalony???????
-  Czy czuję się zmęczony??????\tCzy czuję się wyczerpany???????\tCzy czuję się wypalony????????
-  Czy czuję się zmęczony???????\tCzy czuję się wyczerpany????????\tCzy czuję się wypalony?????????
-  Czy czuję się zmęczony????????\tCzy czuję się wyczerpany?????????\tCzy czuję się wypalony??????????
-  Czy czuję się zmęczony?????????\tCzy czuję się wyczerpany??????????\tCzy czuję się wypalony???????????
-  Czy czuję się zmęczony??????????\tCzy czuję się wyczerpany???????????\tCzy czuję się wypalony????????????
-  Czy czuję się zmęczony???????????\tCzy czuję się wyczerpany????????????\tCzy czuję się wypalony?????????????
-  Czy czuję się zmęczony????????????\tCzy czuję się wyczerpany?????????????\tCzy czuję się wypalony??????????????
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 1	Lorem ipsum dolor sit amet... Pytanie 2 Faza 1	Lorem ipsum dolor sit amet... Pytanie 3 Faza 1
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 2	Lorem ipsum dolor sit amet... Pytanie 2 Faza 2	Lorem ipsum dolor sit amet... Pytanie 3 Faza 2
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 3	Lorem ipsum dolor sit amet... Pytanie 2 Faza 3	Lorem ipsum dolor sit amet... Pytanie 3 Faza 3
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 4	Lorem ipsum dolor sit amet... Pytanie 2 Faza 4	Lorem ipsum dolor sit amet... Pytanie 3 Faza 4
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 5	Lorem ipsum dolor sit amet... Pytanie 2 Faza 5	Lorem ipsum dolor sit amet... Pytanie 3 Faza 5
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 6	Lorem ipsum dolor sit amet... Pytanie 2 Faza 6	Lorem ipsum dolor sit amet... Pytanie 3 Faza 6
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 7	Lorem ipsum dolor sit amet... Pytanie 2 Faza 7	Lorem ipsum dolor sit amet... Pytanie 3 Faza 7
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 8	Lorem ipsum dolor sit amet... Pytanie 2 Faza 8	Lorem ipsum dolor sit amet... Pytanie 3 Faza 8
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 9	Lorem ipsum dolor sit amet... Pytanie 2 Faza 9	Lorem ipsum dolor sit amet... Pytanie 3 Faza 9
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 10	Lorem ipsum dolor sit amet... Pytanie 2 Faza 10	Lorem ipsum dolor sit amet... Pytanie 3 Faza 10
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 11	Lorem ipsum dolor sit amet... Pytanie 2 Faza 11	Lorem ipsum dolor sit amet... Pytanie 3 Faza 11
+Lorem ipsum dolor sit amet... Pytanie 1 Faza 12	Lorem ipsum dolor sit amet... Pytanie 2 Faza 12	Lorem ipsum dolor sit amet... Pytanie 3 Faza 12
   `
 var stageTitles = [
   "Faza 1",
