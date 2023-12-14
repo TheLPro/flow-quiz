@@ -24,6 +24,7 @@ body {
   font-family: var(--normal);
   background: var(--bg, white);
   overflow: hidden;
+  color: black;
 }
 .scroll {
   overflow: auto;
@@ -285,6 +286,12 @@ b {
     width: 100vw;
   }
 }
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
 .s-button {
   font-size: 14px !important;
   line-height: 28px;
