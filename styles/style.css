@@ -98,9 +98,8 @@ img {
 }
 
 form {
-  width: 60%;
-  min-height: 20rem;
-  max-height: 40rem;
+  width: 100%;
+  height: 65vh;
   display: flex;
   flex-direction: column;
   background: var(--primary, blue);
@@ -314,7 +313,7 @@ b {
   -webkit-transition-duration: 0.3s;
   transition-duration: 0.3s;
 
-  border-radius: 5px;
+  border-radius: 2px;
   background-color: var(--bg);
   border: 2px solid var(--primary-800, black);
 }
@@ -327,7 +326,7 @@ b {
   left: 0;
   right: 0;
   bottom: 0;
-  border-radius: 3px;
+  border-radius: 1px;
 
   -webkit-transform: scaleX(0);
   transform: scaleX(0);

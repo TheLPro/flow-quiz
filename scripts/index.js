@@ -104,7 +104,12 @@ var progress = document.getElementById('progressBar');
 var q1 = document.getElementById('q1');
 var q2 = document.getElementById('q2');
 var q3 = document.getElementById('q3');
+var a1 = [id('answer_1_1'), id('answer_1_2'), id('answer_1_3'), id('answer_1_4'), id('answer_1_5')];
+var a2 = [id('answer_2_1'), id('answer_2_2'), id('answer_2_3'), id('answer_2_4'), id('answer_2_5')];
+var a3 = [id('answer_3_1'), id('answer_3_2'), id('answer_3_3'), id('answer_3_4'), id('answer_3_5')];
 var lhCheck = window.location.href.includes('5502');
+
+function id(id) {return document.getElementById(id);}
 
 function changeTitle(num) {
   if (window.location.href.includes('quiz')) {
@@ -118,7 +123,8 @@ function next() {
     current++;
     changeTitle(current);
     setQuestion(current);
-    resetChekcks();
+    resetChekcks(current);
+    localStorage.setItem('data', JSON.stringify(obj));
   } else {
     if (lhCheck) {
       window.location.href = 'done.html';
@@ -133,7 +139,8 @@ function back() {
     current--;
     changeTitle(current);
     setQuestion(current);
-    resetChekcks();
+    resetChekcks(current);
+    localStorage.setItem('data', JSON.stringify(obj));
   } else {
     if (lhCheck) {
       window.location.href = 'index.html';
@@ -146,7 +153,6 @@ function back() {
 function addData(score, s, q) {
   obj[s][q] = score;
   localStorage.setItem('data', JSON.stringify(obj));
-  console.log('Added data: ' + score + ' to ' + s + ' ' + q);
 }
 
 for (let i = 1; i < 13; i++) {
@@ -168,10 +174,12 @@ for (let i = 1; i < 13; i++) {
     document.querySelector(`#${sel}`).textContent = `${score}/3`
   };
 }
-function resetChekcks() {
+function resetChekcks(current) {
   const buttons = document.querySelectorAll("input[type='radio']");
   buttons.forEach((button) => {
-    if (button.id.endsWith('1')) {
+    var i = button.id.split("_");
+    var question = i[1];
+    if (button.id.endsWith(parseInt(obj["s" + current]["q" + question]))) {
       button.checked = true;
     } else {
       button.checked = false;
@@ -204,6 +212,10 @@ if (nextBtn && prevBtn) {
   nextBtn.addEventListener('click', next);
   prevBtn.addEventListener('click', back);
 }
+
+
+
+
 if (window.location.href.includes('quiz')) {
   document.querySelector('#answer_1_1').addEventListener('click', function () {
     addData(1, `s${current}`, 'q1');
@@ -269,4 +281,3 @@ if (document.title.includes("12 Faz Wypalenia Zawodowego")) {
     }
   });
 }
-console.log('Script loaded');
