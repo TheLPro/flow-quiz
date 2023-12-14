@@ -263,21 +263,3 @@ if (window.location.href.includes('quiz')) {
     addData(5, `s${current}`, 'q3');
   });
 }
-if (document.title.includes("Koniec")) {
-  document.querySelector('#return').addEventListener('click', function () {
-    if (lhCheck) {
-      window.location.href = 'quiz.html';
-    } else {
-      window.location.href = 'quiz';
-    }
-  });
-}
-if (document.title.includes("12 Faz Wypalenia Zawodowego")) {
-  document.querySelector('#start').addEventListener('click', function () {
-    if (lhCheck) {
-      window.location.href = 'quiz.html';
-    } else {
-      window.location.href = 'quiz';
-    }
-  });
-}
