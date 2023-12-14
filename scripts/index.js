@@ -138,7 +138,7 @@ function back() {
     resetChekcks(current);
     localStorage.setItem('data', JSON.stringify(obj));
   } else {
-    window.location.href = '';
+    window.location.href = 'https://ifwl.thelpro.studio';
   }
 }
 
