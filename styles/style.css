@@ -369,7 +369,7 @@ a {
   outline: 1px solid red;
 } */
 
-@media (max-width: 1600px) {
+@media (max-width: 1000px) {
   main {
     grid-template-columns: 1fr;
     margin: 0;
