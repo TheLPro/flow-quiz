@@ -126,11 +126,7 @@ function next() {
     resetChekcks(current);
     localStorage.setItem('data', JSON.stringify(obj));
   } else {
-    if (lhCheck) {
-      window.location.href = 'done.html';
-    } else {
-      window.location.href = 'done';
-    }
+    window.location.href = 'done.html';
   }
 }
 
@@ -142,11 +138,7 @@ function back() {
     resetChekcks(current);
     localStorage.setItem('data', JSON.stringify(obj));
   } else {
-    if (lhCheck) {
-      window.location.href = 'index.html';
-    } else {
-      window.location.href = 'index';
-    }
+    window.location.href = '';
   }
 }
 
