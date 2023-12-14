@@ -27,6 +27,18 @@ body {
   overflow: hidden;
   color: black;
 }
+
+noscript {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: red;
+  color: white;
+  font-size: 2rem;
+}
+
 .scroll {
   overflow: auto;
 }
