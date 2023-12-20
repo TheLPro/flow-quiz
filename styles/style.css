@@ -65,10 +65,17 @@ main {
 }
 
 main div {
-  margin-inline: 5rem;
   max-width: 50pc;
 }
 
+main div button {
+  width: 80%;
+}
+
+main div h1 {
+  min-height: 9rem;
+  max-height: 100rem;
+}
 h1 {
   font-size: 4rem;
   line-height: 90%;
