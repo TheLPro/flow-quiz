@@ -386,6 +386,10 @@ form .question {
   gap: 2rem;
 }
 
+form > * {
+  margin-inline: 0;
+}
+
 .score {
   text-align: center;
   font-size: 40px;
@@ -418,21 +422,6 @@ form .question {
   font-weight: 600;
 }
 
-/* Responsive Styles */
-@media (max-width: 1400px) {
-  form {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-    height: min-content;
-    margin-block: auto;
-  }
-
-  form > .question {
-    flex-direction: column !important;
-  }
-}
-
 /* Link Styles */
 a {
   text-decoration: none;
@@ -453,63 +442,6 @@ a {
   -webkit-font-smoothing: antialiased;
 }
 
-/* Swipe2Right Styles */
-.swipe2right {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  -webkit-transform: perspective(1px) translateZ(0);
-  transform: perspective(1px) translateZ(0);
-  -webkit-transition-property: color;
-  transition-property: color;
-  -webkit-transition-duration: 0.3s;
-  transition-duration: 0.3s;
-  border-radius: 2px;
-  background-color: var(--bg);
-  border: 2px solid var(--primary-800, black);
-}
-
-.swipe2right::before {
-  content: '';
-  position: absolute;
-  z-index: -1;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  border-radius: 1px;
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-  -webkit-transform-origin: left;
-  transform-origin: left;
-  -webkit-transition-property: transform;
-  transition-property: transform;
-  -webkit-transition-duration: 0.2s;
-  transition-duration: 0.2s;
-  -webkit-transition-timing-function: ease-in-out;
-  transition-timing-function: ease-in-out;
-}
-
-.swipe2right:hover::before {
-  -webkit-transform: scaleX(1);
-  transform: scaleX(1);
-  background-color: var(--primary-800, black);
-}
-
-.swipe2right::after {
-  -webkit-transform: scaleX(0);
-  transform: scaleX(0);
-}
-
-.swipe2right:hover {
-  color: var(--bg, white);
-}
-
-.swipe2right:active {
-  transition: transform 0.2s ease-in-out;
-  transform: scale(0.95);
-}
-
 /* Mobile/Tablet styles */
 /* Mobile Styles */
 @media (max-width: 768px) {
@@ -520,6 +452,13 @@ a {
   form {
     padding: 30px;
     width: 100vw; /* Added property */
+    text-align: center !important;
+    margin-inline: auto !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   form > .question {
