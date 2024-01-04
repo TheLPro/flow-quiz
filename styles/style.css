@@ -105,18 +105,24 @@ h1 {
   font-weight: 900;
   font-family: var(--bold);
   overflow: hidden;
+  margin-bottom: 20px;
 }
 
 /* Paragraph Styles */
 p {
   color: var(--primary-800, gray);
   line-height: 160%;
+  height: 30vh;
+  margin-right: 20px;
+  padding: 7px;
+  overflow: auto;
+  border: 2px solid var(--primary-800, black);
 }
 
 /* Button Styles */
 button {
   all: unset;
-  width: 80% !important;
+  width: 96% !important;
   padding-block: 1rem;
   text-align: center;
   font-weight: 700;
@@ -134,7 +140,7 @@ button a {
 /* Image Styles */
 img {
   max-width: 100%;
-  max-height: 100vh;
+  height: 100vh;
   object-fit: cover;
   object-position: center;
 }
