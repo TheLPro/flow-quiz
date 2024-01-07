@@ -505,3 +505,65 @@ a {
   }
 }
 
+@media (max-width: 1500px) {
+  img {
+    display: none;
+  }
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+@media (max-width: 550px) {
+  main {
+    display: none;
+  }
+  body {
+    background: red;
+  }
+  body::after {
+    content: 'Sorry, we do not support your device.';
+    color: white;
+    font-size: 5rem;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-wrap: wrap;
+  }
+}
+
+.swipe2right {
+  background-color: var(--bg, black);
+  color: var(--primary-800, white);
+  border: 5px solid var(--primary-800, white);
+  border-radius: 0;
+  padding: 1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  cursor: pointer;
+  transition: transform 250ms ease-in-out;
+  position: relative;
+  overflow: hidden;
+}
+.swipe2right::after {
+  position: absolute;
+  content: 'Zacznij Teraz';
+  top: 0;
+  left: 0;
+  width: 0;
+  height: 100%;
+  transition: width 250ms ease-in-out;
+  background: var(--primary-800, white);
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 0;
+  opacity: 0;
+}
+.swipe2right:hover::after {
+  width: 100%;
+  opacity: 1;
+}
