@@ -386,6 +386,10 @@ form .question {
   gap: 2rem;
 }
 
+form > * {
+  margin-inline: 0;
+}
+
 .score {
   text-align: center;
   font-size: 40px;
@@ -416,21 +420,6 @@ form .question {
 .question_title b {
   font-size: 2rem;
   font-weight: 600;
-}
-
-/* Responsive Styles */
-@media (max-width: 1400px) {
-  form {
-    flex-direction: column !important;
-    justify-content: center;
-    align-items: center;
-    height: min-content;
-    margin-block: auto;
-  }
-
-  form > .question {
-    flex-direction: column !important;
-  }
 }
 
 /* Link Styles */
@@ -520,6 +509,13 @@ a {
   form {
     padding: 30px;
     width: 100vw; /* Added property */
+    text-align: center !important;
+    margin-inline: auto !important;
+    padding: 0 !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
   }
 
   form > .question {
@@ -565,29 +561,4 @@ a {
     padding: 12px 24px;
   }
 }
-.maintxt {
-  overflow: auto;
-  height: 25vh;
-}
-::-webkit-scrollbar {
-  width: 10px;
-}
 
-/* Track */
-::-webkit-scrollbar-track {
-  background: var(--primary-300); 
-}
- 
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--primary); 
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--primary-800); 
-}
-button, input[type="button"], input[type="reset"], input[type="submit"] {
-  -webkit-appearance: button;
-  cursor: pointer;
-}
