@@ -68,18 +68,18 @@ localStorage.setItem('data', data);
   var data = localStorage.getItem('data');
 }
 var questions = `
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 1	Lorem ipsum dolor sit amet... Pytanie 2 Faza 1	Lorem ipsum dolor sit amet... Pytanie 3 Faza 1
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 2	Lorem ipsum dolor sit amet... Pytanie 2 Faza 2	Lorem ipsum dolor sit amet... Pytanie 3 Faza 2
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 3	Lorem ipsum dolor sit amet... Pytanie 2 Faza 3	Lorem ipsum dolor sit amet... Pytanie 3 Faza 3
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 4	Lorem ipsum dolor sit amet... Pytanie 2 Faza 4	Lorem ipsum dolor sit amet... Pytanie 3 Faza 4
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 5	Lorem ipsum dolor sit amet... Pytanie 2 Faza 5	Lorem ipsum dolor sit amet... Pytanie 3 Faza 5
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 6	Lorem ipsum dolor sit amet... Pytanie 2 Faza 6	Lorem ipsum dolor sit amet... Pytanie 3 Faza 6
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 7	Lorem ipsum dolor sit amet... Pytanie 2 Faza 7	Lorem ipsum dolor sit amet... Pytanie 3 Faza 7
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 8	Lorem ipsum dolor sit amet... Pytanie 2 Faza 8	Lorem ipsum dolor sit amet... Pytanie 3 Faza 8
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 9	Lorem ipsum dolor sit amet... Pytanie 2 Faza 9	Lorem ipsum dolor sit amet... Pytanie 3 Faza 9
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 10	Lorem ipsum dolor sit amet... Pytanie 2 Faza 10	Lorem ipsum dolor sit amet... Pytanie 3 Faza 10
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 11	Lorem ipsum dolor sit amet... Pytanie 2 Faza 11	Lorem ipsum dolor sit amet... Pytanie 3 Faza 11
-Lorem ipsum dolor sit amet... Pytanie 1 Faza 12	Lorem ipsum dolor sit amet... Pytanie 2 Faza 12	Lorem ipsum dolor sit amet... Pytanie 3 Faza 12
+Czy przepracowuje się: pracuję dłużej, biorę dodatkowe projekty, podnoszę sam sobie poprzeczkę robiąc wszystko, aby udowodnić swoją wartość?	Czy mam trudności z delegowaniem zadań, odpuszczaniem i czuję potrzebę kontrolowania, aby upewnić się, że wszystko jest wykonane perfekcyjnie?	Czy zaczynam zauważać, że moja ambicja nie pozwala mi odpuścić, choć są “bitwy” które należałoby poddać?
+Czy pracuję dłużej niż wymagane godziny lub biorę na siebie więcej zadań, niż jestem w stanie zrealizować?	Czy odpowiadam na wiadomości sms, e-mail związane z pracą wieczorami, w weekendy czy święta?	Czy mam trudności z koncentracją na zadaniach, popełniam coraz więcej błędów?
+Czy odczuwam narastające zmęczenie z powodu niewystarczającej ilości snu?	Czy zaniedbuję swoje potrzeby związane z regeneracją: odpoczynkiem, hobby, ćwiczeniami, właściwym odżywianiem?	Czy ograniczam czas poświęcony na kontakty społeczne z moją rodziną czy przyjaciółmi na rzecz pracy?
+Czy odczuwam przytłoczenie lub niepokój związany z sytuacją w pracy?	Czy w pracy unikam trudnych rozmów, sytuacji, które sprawią, że czuję się niekomfortowo, bo chcę uniknąć kolejnego obciążenia?	Czy w pracy unikam rozwiązywania problemów lub konfliktów, zastępując je coraz częściej milczeniem lub sarkazmem?
+Czy zadaję sobie pytanie: “co ja tu robię?”, czując się coraz mniej spełniony i “niepasujący” do obecnej pracy?	Czy praca stała się moim jedynym celem, przyćmiewając inne aspekty życia, które kiedyś były dla mnie ważne?	Czy naginam lub zmieniam swoje osobiste wartości, aby lepiej dostosować się do obowiązków zawodowych i mojej ambicji?
+Czy narasta moja frustracja związana z sytuacją w pracy?	Czy z powodu problemów w pracy doświadczam niepowodzeń, trudnych sytuacji poza nią (rodzina, przyjaciele)?	Czy staję się mniej tolerancyjny, zniecierpliwiony wobec błędów i pomyłek innych w pracy?
+Czy czuję, że oddalam się emocjonalnie od rodziny i przyjaciół?	Czy tracę zainteresowanie czynnościami, które kiedyś sprawiały mi przyjemność (hobby, ćwiczenia)?	Czy chętniej sięgam po alkohol lub inne używki, aby się zrelaksować, wyciszyć, pokonać ból czy smutek?
+Czy czuję się emocjonalnie oderwany lub odrętwiały, nie jestem sobą?	Czy ktoś z mojego otoczenia powiedział mi, że jest o mnie zaniepokojony?	Czy zaniedbuję swoje domowe obowiązki z powodu wymagań związanych z pracą?
+Czy czuję się oddzielony od siebie, jakbym obserwował siebie z daleka, w filmie, we śnie?	Czy czuję się mniej wartościowy, ważny w pracy, w rodzinie?	Czy czuję, że nie kontroluję swoich myśli lub działań, działam na “autopilocie” jak robot czy automat?
+Czy mam wrażenie, że nie jestem w stanie odczuwać emocji lub że są one “wypłaszczone”?	Czy wydaje mi się, że nic się nie liczy, nie potrafię odnaleźć sensu i celu w życiu, czuję wewnętrzną pustkę?	Czy zauważam kolejne zmiany w apetycie, wzorcach snu, nadużywaniu alkoholu i innych substancji, aby poradzić sobie ze stresem lub smutkiem?
+Czy przez większość czasu czuję się smutny, nic mnie nie cieszy, nie jestem zainteresowany czynnościami, które kiedyś sprawiały mi radość?	Czy czuję brak nadziei i wewnętrzną rozpacz, brak wyjścia?	Czy przez większość czasu czuję się zmęczony fizycznie lub brakuje mi energii, nawet jeśli nie wykonywałem wysiłku fizycznego?
+Czy przez większość czasu czuję się wyczerpany emocjonalnie i mentalnie, nawet po wystarczającej ilości snu lub urlopie?	Czy mam poważniejsze problemy ze zdrowiem fizycznym związane z osłabioną odpornością i chronicznym stresem (wysypki, problemy krążeniowe inne)?	Czy czuję, że jest mi potrzebna fachowa pomoc lekarska lub terapeutyczna?
   `
 var stageTitles = [
   "Faza 1",
@@ -126,7 +126,11 @@ function next() {
     resetChekcks(current);
     localStorage.setItem('data', JSON.stringify(obj));
   } else {
-    window.location.href = 'done.html';
+    if (!lhCheck) {
+      window.location.href = 'done';
+    } else {
+      window.location.href = 'done.html';
+    }
   }
 }
 
@@ -138,10 +142,13 @@ function back() {
     resetChekcks(current);
     localStorage.setItem('data', JSON.stringify(obj));
   } else {
-    window.location.href = 'https://ifwl.thelpro.studio';
+    if (!lhCheck) {
+      window.location.href = 'https://ifwl.thelpro.studio';
+    } else {
+      window.location.href = 'index.html';
+    }
   }
 }
-
 function addData(score, s, q) {
   obj[s][q] = score;
   localStorage.setItem('data', JSON.stringify(obj));
